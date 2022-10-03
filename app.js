@@ -17,18 +17,23 @@ function errorHandler(errMsg){
 
 function clickHandler(){
     hideMessage()
-    var billAmt = inputBillAmount.value;
-    var cashGiven = inputCashGiven.value;
-    if (billAmt > 0){
-        if(cashGiven >= billAmt){
-            var amtToBeReturned = cashGiven-billAmt;
-            calculateChange(amtToBeReturned);
+    var billAmt = Number(inputBillAmount.value);
+    var cashGiven = Number(inputCashGiven.value);
+    if(billAmt&&cashGiven){
+        if (billAmt > 0){
+            if(cashGiven >= billAmt){
+                var amtToBeReturned = cashGiven-billAmt;
+                calculateChange(amtToBeReturned);
+            }else{
+                errorHandler("Do you want to wash dishes instead?");
+            }
         }else{
-            errorHandler("Do you want to wash dishes instead?");
+            errorHandler("The bill amount should be greater than 0");
         }
     }else{
-        errorHandler("The bill amount should be greater than 0");
+        errorHandler("Please enter both the inputs!!!");
     }
+    
 }
 
 function calculateChange(amountToBeGiven){
