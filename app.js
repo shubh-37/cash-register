@@ -20,7 +20,7 @@ function clickHandler(){
     var billAmt = inputBillAmount.value;
     var cashGiven = inputCashGiven.value;
     if (billAmt > 0){
-        if(cashGiven => billAmt){
+        if(cashGiven >= billAmt){
             var amtToBeReturned = cashGiven-billAmt;
             calculateChange(amtToBeReturned);
         }else{
