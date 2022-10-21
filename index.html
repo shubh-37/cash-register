@@ -8,43 +8,61 @@
     <title>Cash Register</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="heading">Cash Register Manager</h1>
-        <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-        <label class="bill-heading" for="bill-amount"><strong>Please enter bill amount: </strong></label>
-        <input type= "number" id="bill-amount"><br>
-        <label class="cash-heading" for="cash-given"><strong>Please enter the cash given by you: </strong></label>
-        <input type= "number" id="cash-given">
-        <button id="calculate-change">Check</button>
-        <p class="error-message"></p>
-        <table class="cash-change-table">
-            <caption>
-                <strong>
-                    Return Change
-                </strong>
-            </caption>
-            <tr class="no-of-note">
-                <th>No. of Notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-            </tr>
+    <div class="page-container">
+        <div class="container">
+            <h1 class="heading">Cash Register Manager</h1>
+            <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+            <label class="bill-heading" for="bill-amount"><strong>Please enter bill amount: </strong></label>
+            <input type= "number" id="bill-amount"><br>
+            <label class="cash-heading" for="cash-given"><strong>Please enter the cash given by you: </strong></label>
+            <input type= "number" id="cash-given">
+            <button id="calculate-change">Check</button>
+            <p class="error-message"></p>
+            <table class="cash-change-table">
+                <caption>
+                    <strong>
+                        Return Change
+                    </strong>
+                </caption>
+                <tr class="no-of-note">
+                    <th>No. of Notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
 
-            <tr class="denomination">
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
+                <tr class="denomination">
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        <footer class="footer">
+            <span class="footer-heading">
+                Made By Shubh Arya
+            </span>
+            <ul class="list-non-bullet">
+                <li class="list-item-inline">
+                    <a href="/" class="link">Twitter</a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="/" class="link">LinkedIn</a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="/" class="link">GitHub</a>
+                </li>
+            </ul>
+        </footer>
     </div>
     <script src="app.js"></script>
 </body>
